@@ -1,14 +1,16 @@
 # Nerfies
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the [StyleMesh website](https://stylemesh.github.io).
 
-If you find Nerfies useful for your work please cite:
+If you find StyleMesh useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@misc{höllein2021stylemesh,
+      title={StyleMesh: Style Transfer for Indoor 3D Scene Reconstructions}, 
+      author={Lukas Höllein and Justin Johnson and Matthias Nießner},
+      year={2021},
+      eprint={2112.01530},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 ```
 
