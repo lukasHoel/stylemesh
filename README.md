@@ -1,4 +1,4 @@
-# Nerfies
+# StyleMesh
 
 This is the repository that contains source code for the [StyleMesh website](https://stylemesh.github.io).
 
