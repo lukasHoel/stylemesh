@@ -2,7 +2,7 @@
 
 This is the official repository that contains source code for [StyleMesh](https://stylemesh.github.io).
 
-[Arxiv](https://arxiv.org/abs/2112.01530)[Project Page](https://lukashoel.github.io/stylemesh/)[Video](https://www.youtube.com/watch?v=ZqgiTLcNcks)
+[[Arxiv](https://arxiv.org/abs/2112.01530)] [[Project Page](https://lukashoel.github.io/stylemesh/)] [[Video](https://www.youtube.com/watch?v=ZqgiTLcNcks)]
 
 If you find StyleMesh useful for your work please cite:
 ```
