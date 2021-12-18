@@ -4,6 +4,8 @@ This is the official repository that contains source code for [StyleMesh](https:
 
 [[Arxiv](https://arxiv.org/abs/2112.01530)] [[Project Page](https://lukashoel.github.io/stylemesh/)] [[Video](https://www.youtube.com/watch?v=ZqgiTLcNcks)]
 
+![Teaser](static/images/teaser.jpg "StyleMesh")
+
 If you find StyleMesh useful for your work please cite:
 ```
 @misc{höllein2021stylemesh,
