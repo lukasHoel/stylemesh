@@ -1,0 +1,26 @@
+python -m model.optimize --gpus 1 \
+--root_path path/to/datasets/scannet --dataset scannet \
+--resize_size 256 --texture_size 4096,4096 \
+--min_images 1 --max_images 1000 --scene scene0673_00_closeup \
+--hierarchical --hierarchical_layers 1 \
+--loss_weight content=7e1 \
+--loss_weight style=1e-3 --style_weights="1000,1000,10,10,1000" \
+--loss_weight tex_reg=0 \
+--vgg_gatys_model_path path/to/models/vgg_conv.pth \
+--renderer_mipmap path/to/git/neural-rendering-style-transfer/scripts/scannet/render_uv/build/scannet_uv_renderer \
+--learning_rate 1 --decay_step_size 15 \
+--log_images_nth 5000 --batch_size 1 \
+--max_epochs 1 \
+--train_split 0.99 --val_split 0.01 \
+--sampler_mode repeat --index_repeat 1 \
+--save_texture --split_mode sequential \
+--num_workers 4 \
+--style_image_path path/to/datasets/styles/3style/14-2.jpg \
+--style_pyramid_mode "single" \
+--gram_mode "average" \
+--angle_threshold 3000 \
+--pyramid_levels 1 \
+--min_pyramid_depth 0.25 \
+--min_pyramid_height 256 \
+--no_depth_scaling \
+--no_angle_weight
