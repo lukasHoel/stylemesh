@@ -1,6 +1,6 @@
-# StyleMesh
+# StyleMesh (CVPR2022)
 
-This is the official repository that contains source code for [StyleMesh](https://lukashoel.github.io/stylemesh/).
+This is the official repository that contains source code for the CVPR2022 paper [StyleMesh](https://lukashoel.github.io/stylemesh/).
 
 [[Arxiv](https://arxiv.org/abs/2112.01530)] [[Project Page](https://lukashoel.github.io/stylemesh/)] [[Video](https://www.youtube.com/watch?v=ZqgiTLcNcks)]
 
