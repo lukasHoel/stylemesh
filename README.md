@@ -8,13 +8,12 @@ This is the official repository that contains source code for the CVPR2022 paper
 
 If you find StyleMesh useful for your work please cite:
 ```
-@misc{höllein2021stylemesh,
+@inproceedings{hoellein2022stylemesh,
       title={StyleMesh: Style Transfer for Indoor 3D Scene Reconstructions}, 
-      author={Lukas Höllein and Justin Johnson and Matthias Nießner},
-      year={2021},
-      eprint={2112.01530},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      author={Lukas H{\"o}llein and Justin Johnson and Matthias Nie{\ss}ner},
+      booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+      month={June},
+      year={2022}
 }
 ```
 
