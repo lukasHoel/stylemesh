@@ -20,12 +20,16 @@ If you find StyleMesh useful for your work please cite:
 ## Preprocessing
 The following steps are necessary to prepare all data.
 
-- Download VGG Model: https://bethgelab.org/media/uploads/pytorch_models/vgg_conv.pth
+### Data Setup
+
 - Download Matterport and Scannet datasets (we use train scannet scenes only, see [scripts/scannet/scannet_train.txt](scripts/scannet/scannet_train.txt) for a complete list)
 - Prepare Scannet Scenes: see [scripts/scannet/prepare_data](scripts/scannet/prepare_data) and [scripts/scannet/filter/filter_blurry.py](scripts/scannet/filter/filter_blurry.py). This extracts RGB images and removes blurry frames.
+- Create texture parametrization for each mesh (requires blender): see [scripts/matterport/create_uvs.py](scripts/matterport/create_uvs.py) and [scripts/scannet/create_uvs.py](scripts/scannet/create_uvs.py). This saves a new version of each mesh file, that contains a uv texture parametrization. A sample output can be found here: https://drive.google.com/file/d/1x76zVka-Nkk87M0qZYwFZ51FUv6pVL8y/view?usp=sharing
 - Compile Matterport and Scannet renderers: see [scripts/matterport/render_uv](scripts/matterport/render_uv) and [scripts/scannet/render_uv](scripts/scannet/render_uv) for more details.
-- Create texture parametrization for each mesh (requires blender): see [scripts/matterport/create_uvs.py](scripts/matterport/create_uvs.py) and [scripts/scannet/create_uvs.py](scripts/scannet/create_uvs.py). This saves a new version of each mesh file, that contains a uv texture parametrization.
-- Render uv maps for Mattertport and Scannet: see [scripts/matterport/render_uvs.py](scripts/matterport/render_uvs.py) and [scripts/scannet/render_uvs.py](scripts/scannet/render_uvs.py). This preprocessing step speeds up the optimization by precomputing the texture lookups for each viewpoint.
+- Render uv maps for Mattertport and Scannet: see [scripts/matterport/render_uvs.py](scripts/matterport/render_uvs.py) and [scripts/scannet/render_uvs.py](scripts/scannet/render_uvs.py). This preprocessing step speeds up the optimization by precomputing the texture lookups for each viewpoint. A sample output can be found here: https://drive.google.com/file/d/1QCOQivACD03ICIlO-E6ivEcfkDMuKYlM/view?usp=sharing
+
+### Project Setup
+- Download VGG Model: https://bethgelab.org/media/uploads/pytorch_models/vgg_conv.pth
 - Change dataset and vgg-model paths in [scripts/train/*](scripts/train) to your local machine locations
 - Create a conda environment and use it for all further executions: see [requirements.txt](requirements.txt)
 
