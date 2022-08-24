@@ -29,7 +29,7 @@ The following steps are necessary to prepare all data.
 - Render uv maps for Mattertport and Scannet: see [scripts/matterport/render_uvs.py](scripts/matterport/render_uvs.py) and [scripts/scannet/render_uvs.py](scripts/scannet/render_uvs.py). This preprocessing step speeds up the optimization by precomputing the texture lookups for each viewpoint. A sample output can be found here: https://drive.google.com/file/d/1QCOQivACD03ICIlO-E6ivEcfkDMuKYlM/view?usp=sharing
 
 ### Project Setup
-- Download VGG Model: https://bethgelab.org/media/uploads/pytorch_models/vgg_conv.pth
+- Download VGG Model: https://bethgelab.org/media/uploads/pytorch_models/vgg_conv.pth or https://drive.google.com/file/d/1IpTw7zOjWFMYXgt2zThPYIJ8c-DJw3xU/view?usp=sharing
 - Change dataset and vgg-model paths in [scripts/train/*](scripts/train) to your local machine locations
 - Create a conda environment and use it for all further executions: see [requirements.txt](requirements.txt)
 
